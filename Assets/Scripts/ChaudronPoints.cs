@@ -12,6 +12,8 @@ public class ChaudronPoints : MonoBehaviour
     //Référence au scriptable object 
     [SerializeField] private InfosJoueurs _infosJoueurs;
      [SerializeField]private int _nbPoints;
+
+     [SerializeField] private AudioSource _sonChaudron;
     private void OnTriggerEnter(Collider other){
 
       // Debug.Log("Test collision");
@@ -24,6 +26,7 @@ public class ChaudronPoints : MonoBehaviour
        
            //Debug.Log(_texteNbPoints.text);
             _infosJoueurs._nbPoints += _nbPoints;
+            _sonChaudron.Play();
            Destroy(other.gameObject);
          
             

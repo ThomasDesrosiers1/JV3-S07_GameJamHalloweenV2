@@ -26,7 +26,6 @@ public class AffichageDesPoints : MonoBehaviour
    
     // Pour afficher le texte des points qui augmente dans l'interface joueur 
     public void AfficherPoints(){
-       Debug.Log("aga");
        _texteNbPoints.text = _infosJoueurs._nbPoints.ToString();
          
     }
