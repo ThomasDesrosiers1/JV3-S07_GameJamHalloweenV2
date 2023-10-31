@@ -17,7 +17,7 @@ public class ChaudronPoints : MonoBehaviour
       // Debug.Log("Test collision");
 
         if(other.gameObject.tag == "Objets"){
-           // Debug.Log("Test objet");
+          Debug.Log("Test objet");
 
         //Si le nombre de points est suppérieur à 0 on incrémente les points quand le joueur entre en collision avec un objet 
 
